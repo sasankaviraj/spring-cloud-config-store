@@ -1,2 +1,11 @@
+spring:
+  application:
+    name: book-service   #bootstrap.yml runs before application.yml
+    
 server:
-  port: 9192
+  port: 0 #randomly select the port
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
